@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from '@/app/styles/Home/Home.module.css'
-const Home = () => {
+const Home = ({scrollToSwap}) => {
     return (
         <div className={styles.container}>
             <div className={styles.logo_container}>
@@ -45,7 +45,7 @@ const Home = () => {
                 </div>
             </div>
             <div className='content'>
-                <div className={styles.swapBtn}>
+                <div className={styles.swapBtn} onClick={scrollToSwap}>
                     <p>SWAP NOW</p>
                 </div>
                 <h1 className={styles.heading}>THE ONLY CRYPTO WEBSITE YOU WILL <span className='text-[#F202FF]'>EVER VISIT</span></h1>
