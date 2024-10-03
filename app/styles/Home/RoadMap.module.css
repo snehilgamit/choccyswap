@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    overflow: hidden;
+}
+
+.box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.heading{
+    position: relative;
+}
+.heading h1 {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 67px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #F202FF;
+    text-transform: uppercase;
+}
+
+.gridBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 70px;
+    width: 1322px;
+    height: 440px;
+}
+
+.question {
+    /* font-family: 'Inter'; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+.answer {
+    /* font-family: 'Inter'; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.background_drop1{   
+    position: absolute;
+    width: 433px;
+    height: 433px;
+    background: rgba(242, 2, 255, 0.1);
+    filter: blur(100px);
+    left: -140px;
+    top: 50px;
+}
+.background_drop2{   
+    position: absolute;
+    width: 433px;
+    height: 433px;
+    background: rgba(242, 2, 255, 0.1);
+    filter: blur(100px);
+    right: -140px;
+    top: 50px;
+}

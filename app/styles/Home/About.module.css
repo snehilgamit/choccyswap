@@ -1,0 +1,42 @@
+.container {
+    width: 100%;
+    height: 610px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(269.34deg, rgba(255, 255, 255, 0.1) 17.42%, rgba(242, 2, 255, 0.1) 84.09%);
+    backdrop-filter: blur(37.5px);
+    overflow: hidden;
+}
+
+.box {
+    display: flex;
+}
+
+.gridBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 70px;
+    width: 1127px;
+    height: 440px;
+}
+
+.title {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 39px;
+    text-align: start;
+    color: #FFFFFF;
+}
+
+.content {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #7D7D7D;
+}
