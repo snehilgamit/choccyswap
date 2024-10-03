@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from '@/app/styles/Home/RoadMap.module.css'
 import Image from 'next/image'
-import { Dirent } from 'fs'
 
 
 const context = [{ question: 'What is cryptocurrency?', answer: 'Cryptocurrency is a digital currency secured by cryptography and operating on decentralized networks.' },
