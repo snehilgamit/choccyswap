@@ -26,7 +26,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
-    color: #F202FF;
+    color: #ED8FDD;
     text-transform: uppercase;
 }
 
@@ -36,7 +36,7 @@
     width: 692px;
     height: 781px;
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid #F202FF;
+    border: 1px solid #ED8FDD;
     box-shadow: inset 0px 0px 30px rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(60px);
     border-radius: 30px;
@@ -54,6 +54,7 @@
     filter: blur(50px);
     z-index: 1;
 }
+
 .background_drop2 {
     position: absolute;
     width: 284px;
@@ -114,7 +115,7 @@
     font-size: 24px;
     line-height: 36px;
     text-align: center;
-    color: #F202FF;
+    color: #ED8FDD;
 }
 
 .price {
@@ -137,10 +138,12 @@
     display: flex;
     justify-items: center;
     align-items: center;
-    background: rgba(242, 2, 255, 0.2);
+    background: rgba(237, 143, 221, 0.2);
     border: 1px solid #630468;
     backdrop-filter: blur(50px);
+    /* Note: backdrop-filter has minimal browser support */
     border-radius: 100px;
+
 
 }
 

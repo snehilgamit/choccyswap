@@ -4,7 +4,7 @@ import styles from '@/app/styles/Home/Swap.module.css'
 import Image from 'next/image'
 
 const Swap = () => {
-  const [value,setValue]= useState('');
+  const [value, setValue] = useState('');
   return (
     <div className={styles.container}>
       <div className={styles.box}>
@@ -24,8 +24,20 @@ const Swap = () => {
           <div className={styles.swap_details}>
             <div className={styles.swap_from}>From</div>
             <div className='flex relative'>
-            <input type="text" name="from" id="from" className={styles.from_input} placeholder='0' value={value} onChange={(e)=>{if(!isNaN(e.target.value)){setValue(e.target.value)}}} />
-              
+              <input
+                type="text"
+                name="from"
+                id="from"
+                className={styles.from_input}
+                placeholder='0'
+                value={value}
+                onChange={(e) => {
+                  if (!isNaN(e.target.value)) {
+                    setValue(e.target.value);
+                  }
+                }}
+              />
+
               <div className='flex absolute top-1/2 -translate-y-1/2 right-7 gap-2'>
                 <p className={styles.tokenName}>ETH</p>
                 <Image
@@ -59,8 +71,16 @@ const Swap = () => {
             </div>
             <div className={styles.swap_from}>To (Estimated)</div>
             <div className='flex relative'>
-            <input type="text" name="to" id="to" placeholder='0' className={styles.from_input} value={(value*0.6588).toFixed(4)} />
-              <div className='flex absolute top-1/2 -translate-y-1/2 right-7 gap-2'>
+              <input
+                type="text"
+                name="to"
+                id="to"
+                placeholder='0'
+                className={styles.from_input}
+                value={(value * 0.6588).toFixed(4)}
+                readOnly
+              />
+              <div className='flex absolute -top-1/2 right-7 gap-2'>
                 <p className={styles.tokenName}>USDC</p>
                 <Image
                   src={"/home/swap/dropdown.svg"}
@@ -71,21 +91,7 @@ const Swap = () => {
                 />
               </div>
             </div>
-            <div className='flex justify-between mt-5'>
-              <div className={styles.price}>
-                <p>Price</p>
-              </div>
-              <div className={`${styles.price} flex gap-2`}>
-                <p>0.6588 per USDC</p>
-                <Image
-                  src={"/home/swap/recycle.svg"}
-                  width={19}
-                  height={19}
-                  loading={"lazy"}
-                  alt='logo'
-                />
-              </div>
-            </div>
+
             <div className={styles.connectWalletBtn}>
               <p>Connect wallet</p>
             </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from '@/app/styles/Home/Home.module.css'
+import LogoPage from '@/components/Logo/Logo'
 const Home = ({scrollToSwap}) => {
     return (
         <div className={styles.container}>
@@ -44,12 +45,15 @@ const Home = ({scrollToSwap}) => {
                     />
                 </div>
             </div>
-            <div className='content'>
+            <div className='content flex justify-center flex-col items-center'>
                 <div className={styles.swapBtn} onClick={scrollToSwap}>
                     <p>SWAP NOW</p>
                 </div>
-                <h1 className={styles.heading}>THE ONLY CRYPTO WEBSITE YOU WILL <span className='text-[#F202FF]'>EVER VISIT</span></h1>
-                <p className={styles.description}>THE FIRST DESK ON CROMIA</p>
+                <div className=' absolute top-[154px]'>
+                <LogoPage/>
+
+                </div>
+                <p className={`${styles.description} subtitle mt-44`}>THE FIRST DESK ON CROMIA</p>
                 <div className={styles.box}>
                     <div className={styles.boxBtn_1}>TRY NOW</div>
                     <div className={styles.boxBtn_1}>TRY NOW</div>
