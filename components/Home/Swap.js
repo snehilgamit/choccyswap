@@ -97,8 +97,8 @@ const Swap = () => {
               <p>Connect wallet</p>
             </div>
           </div>
-          <div className={styles.background_drop}></div>
-          <div className={styles.background_drop2}></div>
+          {/* <div className={styles.background_drop}></div>
+          <div className={styles.background_drop2}></div> */}
         </div>
       </div>
     </div>
