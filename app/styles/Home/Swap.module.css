@@ -149,7 +149,7 @@
     display: flex;
     justify-items: center;
     align-items: center;
-    background: rgba(237, 143, 221, 0.2);
+    background-color: #ED8FDD33;
     border: 1px solid #630468;
     backdrop-filter: blur(50px);
     /* Note: backdrop-filter has minimal browser support */
