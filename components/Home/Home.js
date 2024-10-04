@@ -7,14 +7,14 @@ const Home = ({scrollToSwap}) => {
         <div className={styles.container}>
             <div className={styles.logo_container}>
                 <Image
-                    src={"/home/logo.png"}
+                    src={"/home/logo.svg"}
                     width={78}
                     height={78}
                     priority={true}
                     loading={"eager"}
-                    alt='circle_bl'
+                    alt='logo'
                 />
-                <h1>LOGO</h1>
+                <h1>ChoccySwap</h1>
             </div>
             <div className='bg-circle z-0'>
                 <div className={styles.circle_bl}>
@@ -53,8 +53,8 @@ const Home = ({scrollToSwap}) => {
                 <LogoPage/>
 
                 </div>
-                <p className={`${styles.description} subtitle mt-44`}>THE FIRST DESK ON CROMIA</p>
-                <div className={styles.box}>
+                <p className={`${styles.description} subtitle mt-[300px] max-sm:mt-[200px]`}>THE FIRST DESK ON CROMIA</p>
+                <div className={`${styles.box} mt-20`}>
                     <div className={styles.boxBtn_1}>TRY NOW</div>
                     <div className={styles.boxBtn_1}>TRY NOW</div>
                     <div className={styles.boxBtn_2}><p>Check out The app</p></div>

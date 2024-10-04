@@ -2,7 +2,7 @@ import React from 'react';
 
 const LogoPage = () => {
     return (
-        <div className="lg:min-w-[500px] md:min-w-[300px] -mt-[110px]">
+        <div className="lg:min-w-[500px] md:min-w-[300px] -mt-[110px] max-sm:-mt-[40px]">
             <svg width="100%" height="100%" viewBox="-20 -20 148.35928 148.35928" id="logo">
                 <defs>
                     <linearGradient id="Gradient1">

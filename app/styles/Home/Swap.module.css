@@ -73,6 +73,16 @@
     margin: 39px;
 }
 
+.logo_container h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    margin-left: 10px;
+    font-size: 30px;
+    line-height: 45px;
+    color: #ED8FDD;
+}
+
 .swap_details {
     width: 100%;
     padding: 39px;
@@ -114,6 +124,7 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 36px;
+    cursor: pointer;
     text-align: center;
     color: #ED8FDD;
 }
@@ -159,4 +170,10 @@
     text-align: center;
     color: #FFFFFF;
 
+}
+
+@media (max-width: 768px) {
+    .box{
+        scale: 0.5;
+    }
 }

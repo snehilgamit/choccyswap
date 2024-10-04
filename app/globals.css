@@ -229,3 +229,68 @@ body{
 path {
   filter: drop-shadow(0 0 5px #ff3fdc)
 }
+
+
+.Navigation_dropdown li {
+  display: block;
+  border-bottom: 1px solid;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.Navigation_resources {
+  position: relative;
+}
+
+.Navigation_dropdown {
+  background-color: #3b3b3b;
+  position: absolute;
+  z-index: 999;
+  right: -1.6rem;
+  top: 1.5rem;
+  display: none;
+  padding: 10px 20px;
+  color: #9c9c9c;
+  border-radius: 10px;
+}
+
+.Navigation_dropdown li:hover {
+  color: #ccc;
+}
+
+.Navigation_resources:hover .Navigation_dropdown {
+  display: block;
+}
+
+.Roadmap_label {
+  cursor: pointer;
+}
+
+.Roadmap_label:before {
+  content: "+";
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.Roadmap_accordion input[type="checkbox"] {
+  display: none; /* Hide the checkbox itself */
+}
+
+.Roadmap_content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, margin-top 0.5s ease;
+}
+
+/* When the checkbox is checked, expand the content */
+.Roadmap_accordion input[type="checkbox"]:checked + label + .Roadmap_content {
+  max-height: 900px; /* Adjust as needed for the content */
+  margin-top: 1rem;
+}
+
+/* Change the icon when the accordion is open */
+.Roadmap_accordion input[type="checkbox"]:checked + label:before {
+  content: "-";
+}
+

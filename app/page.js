@@ -5,6 +5,7 @@ import Home from '@/components/Home/Home'
 import Swap from '@/components/Home/Swap'
 import RoadMap from '@/components/Home/RoadMap'
 import Menubar from '@/components/Menubar'
+import Footer from '@/components/Footer'
 import { useRef } from 'react'
 import "animate.css"
 const home = () => {
@@ -16,13 +17,14 @@ const home = () => {
   }
   return (
     <div className='animate__animated animate__fadeIn'>
-    <Menubar/>
+      <Menubar />
       <Home scrollToSwap={scrollToSwap} />
       <About />
       <div ref={swapRef}>
         <Swap />
       </div>
       <RoadMap />
+      <Footer/>
     </div>
   )
 }

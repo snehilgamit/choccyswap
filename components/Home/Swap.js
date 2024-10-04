@@ -14,12 +14,13 @@ const Swap = () => {
         <div className={styles.swap_box}>
           <div className={styles.logo_container}>
             <Image
-              src={"/home/logo.png"}
+              src={"/home/logo.svg"}
               width={78}
               height={78}
               loading={"lazy"}
               alt='logo'
             />
+            <h1>ChoccySwap</h1>
           </div>
           <div className={styles.swap_details}>
             <div className={styles.swap_from}>From</div>
